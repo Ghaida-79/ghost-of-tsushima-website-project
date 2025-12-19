@@ -31,6 +31,8 @@ body {
   --off-white: #dbd9d0;
   --red: #9f0d0a;
   --dark-gray: #0b0b0b;
+  --black: #000;
+  --white: white;
 }
 
 .logo {
@@ -241,7 +243,7 @@ body {
 
 .close-button {
   position: absolute;
-  top: 25px;
+  top: 30px;
   right: 30px;
   font-size: 30px;
   background: none;

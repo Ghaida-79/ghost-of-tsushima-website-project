@@ -7,6 +7,47 @@ body {
   background-color: black;
 }
 
+.content-warning {
+  font-family: var(--description-font);
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.content-warning-box {
+  background: var(--dark-gray);
+  color: var(--off-white);
+  padding: 40px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+}
+
+.content-warning h2 { 
+  letter-spacing: 1px;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.content-warning-box p {
+  font-size: 15px;
+}
+
+.content-warning-accept {
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: var(--red);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
 .wallpapers {
   padding: 80px 40px;
   text-align: center;
@@ -14,7 +55,7 @@ body {
 
 .wallpapers h1 {
   font-family: var(--main-font);
-  color: var(--off-white);
+  color: var(--white);
   font-size: 40px;
   margin: 60px auto;
 }
