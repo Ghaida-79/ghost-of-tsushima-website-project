@@ -30,6 +30,7 @@ body {
   --description-font: "Inter", sans-serif;
   --off-white: #dbd9d0;
   --red: #9f0d0a;
+  --dark-gray: #0b0b0b;
 }
 
 .logo {
@@ -143,7 +144,7 @@ body {
   align-items: center;
   text-align: center;
   max-width: 900px;
-  gap: 2rem;
+  gap: 28px;
   margin: 0 auto;
 }
 
@@ -156,6 +157,12 @@ body {
   margin-bottom: 0;
 }
 
+.story-mini-title {
+  font-family: var(--description-font);
+  color: white;
+  margin: 0;
+}
+
 .story-article {
   font-family: var(--description-font);
   display: flex;
@@ -165,7 +172,7 @@ body {
 }
 
 .screens-section {
-  background: #0b0b0b;
+  background: var(--dark-gray);
   padding: 60px;
 }
 
