@@ -3,7 +3,7 @@ let box = document.querySelector('.box');
 let boxImage = document.querySelector('.box-image');
 
 let nextButton = document.querySelector('.next-button');
-let prevousButton = document.querySelector('.prevous-button');
+let previousButton = document.querySelector('.previous-button');
 let closeButton = document.querySelector('.close-button');
 
 let index = 0;
@@ -26,7 +26,7 @@ nextButton.onclick = () => {
   boxImage.src = images[index].src;
 };
 
-prevousButton.onclick = () => {
+previousButton.onclick = () => {
   index--;
 
   if (index < 0) {

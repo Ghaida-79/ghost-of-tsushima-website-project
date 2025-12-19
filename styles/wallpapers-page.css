@@ -1,0 +1,39 @@
+body {
+  min-height: 100vh;
+  background-image: url(../images/background-page-background-blured.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.wallpapers {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.wallpapers h1 {
+  font-family: var(--main-font);
+  color: var(--off-white);
+  font-size: 40px;
+  margin: 60px auto;
+}
+
+.wallpapers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.wallpapers-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wallpapers-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
