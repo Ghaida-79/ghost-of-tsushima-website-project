@@ -1,27 +1,41 @@
-const images = document.querySelectorAll('.shot');
-const box = document.querySelector('.box');
-const boxImage = document.querySelector('.box-image');
+let images = document.querySelectorAll('.shot');
+let box = document.querySelector('.box');
+let boxImage = document.querySelector('.box-image');
 
-const nextButton = document.querySelector('.next-button');
-const prevousButton = document.querySelector('.prevous-button');
-const closeButton = document.querySelector('.close-button');
+let nextButton = document.querySelector('.next-button');
+let prevousButton = document.querySelector('.prevous-button');
+let closeButton = document.querySelector('.close-button');
 
-let currentIndex = 0;
+let index = 0;
 
-images.forEach((img, index) => {
-  img.addEventListener('click', () => {
-    currentIndex = index;
+images.forEach((img, i) => {
+  img.onclick = () => {
+    index = i;
     boxImage.src = img.src;
     box.style.display = 'flex';
-  });
+  };
 });
 
 nextButton.onclick = () => {
-  currentIndex++;
+  index++;
 
-  if (currentIndex >= images.length) {
-    currentIndex =0;
+  if (index == images.length) {
+    index = 0;
   }
 
-  boxImage.src = images[currentIndex].src;
+  boxImage.src = images[index].src;
 };
+
+prevousButton.onclick = () => {
+  index--;
+
+  if (index < 0) {
+    index = images.length - 1;
+  }
+
+  boxImage.src = images[index].src;
+};
+
+closeButton.onclick = () => {
+  box.style.display = 'none';
+}
