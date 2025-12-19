@@ -1,0 +1,263 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Trajan Pro", sans-serif;
+    background-color: #000;
+    font-family: Sp Ghost, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+  font-family: "Trajan Pro";
+  src: url("../fonts/TrajanPro-Bold.otf") format("opentype");
+  src: url("../fonts/TrajanPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --off-white: #dbd9d0;
+  --red: #9f0d0a;
+}
+
+.logo {
+  left: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.navbar {
+  font-family: "Trajan Pro", sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  background-color: black;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-items a {
+  text-decoration: none;
+}
+
+.nav-item {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  font-size: 15px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero-bg {
+  width: 100%;
+  display: block;
+}
+
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.quote-section {
+  font-family: "Trajan Pro", sans-serif;
+  background-color: var(--off-white);
+  width: 100%;
+  padding: 80px 0;
+}
+
+.character-quote {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.quote-text {
+  font-size: 30px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.quote-author {
+  display: block;
+  color: var(--red);
+  font-size: 20px !important;
+  letter-spacing: 2px;
+}
+
+.story-section {
+  font-family: "Trajan Pro", sans-serif;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.story-title {
+  color: var(--red);
+  font-size: 4rem;
+  font-family: "Trajan Pro", sans-serif;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.story-article {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: white;
+}
+
+
+.box {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.nav {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.prevous-button {
+  left: 30px;
+}
+
+.next-button {
+  right: 30px;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.feature-section {
+  font-family: "Trajan Pro", sans-serif;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 40px;
+  color: var(--off-white);
+  margin: 60px auto 80px auto;
+  padding: 0 20px;
+}
+
+.feature-section-item {
+  flex: 1;
+  text-align: center;
+}
+
+.feature-section h2 {
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.feature-section img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.feature-section p {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px 50px;
+
+  vertical-align: top;
+  border: 1px solid rgba(225, 225, 225, 0.1);
+  padding: 60px 40px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 200px;
+}
+
+.footer-esrb img {
+  width: 70%;
+  cursor: pointer;
+}
+
+
+.footer-esrb p {
+  color: white;
+  font-size: 16px;
+}
+
+.footer-platforms p {
+  color: white;
+  font-size: 20px;
+}
+
+.platform-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.platform-links a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-credits {
+  color: white;
+  font-size: 18px;
+}
