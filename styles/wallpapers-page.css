@@ -78,3 +78,73 @@ body {
   transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
+
+
+@media (max-width: 768px) {
+
+  /* ===== CONTENT WARNING ===== */
+  .content-warning-box {
+    padding: 25px 20px;
+    width: 90%;
+  }
+
+  .content-warning h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .content-warning-box p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .content-warning-accept {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+
+  /* ===== PAGE PADDING ===== */
+  .wallpapers {
+    padding: 60px 20px;
+  }
+
+  .wallpapers h1 {
+    font-size: 28px;
+    margin: 40px auto;
+  }
+
+  /* ===== GRID ===== */
+  .wallpapers-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .wallpapers-grid img {
+    height: 220px;
+  }
+
+  /* ===== IMAGE VIEWER ===== */
+  .box-image {
+    width: 95%;
+    max-width: 95%;
+  }
+
+  .previous-button,
+  .next-button {
+    font-size: 32px;
+  }
+
+  .previous-button {
+    left: 10px;
+  }
+
+  .next-button {
+    right: 10px;
+  }
+
+  .close-button {
+    top: 15px;
+    right: 15px;
+    font-size: 26px;
+  }
+}
