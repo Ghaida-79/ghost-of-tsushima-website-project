@@ -63,19 +63,16 @@ body {
 
 @media (max-width: 768px) {
 
-  /* ===== TITLE ===== */
   .title {
     font-size: 28px;
     margin-bottom: 20px;
   }
 
-  /* ===== PAGE CONTAINER ===== */
   .characters-list-view {
     margin: 100px 20px;
     gap: 60px;
   }
 
-  /* ===== CHARACTER ROW ===== */
   .character-row {
     flex-direction: column;
     margin-top: 0;
@@ -89,7 +86,6 @@ body {
     margin-right: 0;
   }
 
-  /* ===== INFO ===== */
   .info {
     text-align: center;
     padding: 0 10px;

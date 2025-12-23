@@ -341,7 +341,6 @@ body {
 
 @media (max-width: 768px) {
 
-  /* ===== NAVBAR ===== */
   .navbar {
     height: auto;
     grid-template-columns: auto;
@@ -359,7 +358,6 @@ body {
     letter-spacing: 1px;
   }
 
-  /* ===== HERO VIDEO ===== */
   .hero-video {
     height: 70vh;
   }
@@ -368,7 +366,6 @@ body {
     width: 80%;
   }
 
-  /* ===== QUOTE ===== */
   .quote-text {
     font-size: 22px;
   }
@@ -377,7 +374,6 @@ body {
     font-size: 16px !important;
   }
 
-  /* ===== STORY ===== */
   .story-title {
     font-size: 32px;
     white-space: normal;
@@ -388,7 +384,6 @@ body {
     padding: 0 10px;
   }
 
-  /* ===== SCREENS ===== */
   .screens-section {
     padding: 30px 20px;
   }
@@ -402,7 +397,6 @@ body {
     grid-row: auto;
   }
 
-  /* Image viewer */
   .box-image {
     width: 90%;
   }
@@ -412,7 +406,6 @@ body {
     font-size: 30px;
   }
 
-  /* ===== FEATURE SECTION ===== */
   .feature-section {
     flex-direction: column;
     padding: 80px 20px;
@@ -428,7 +421,6 @@ body {
     max-width: 100%;
   }
 
-  /* ===== FOOTER ===== */
   .site-footer {
     flex-direction: column;
     gap: 30px;
