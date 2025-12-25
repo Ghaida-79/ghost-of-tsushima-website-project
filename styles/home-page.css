@@ -290,6 +290,28 @@ body {
   letter-spacing: 1px;
 }
 
+.feedback-section {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.feedback-section h2 {
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.feedback-section p {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feedback-section a {
+  color: var(--red);
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -302,7 +324,7 @@ body {
   padding: 60px 40px;
   text-align: center;
   font-size: 12px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .footer-esrb img {
