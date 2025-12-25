@@ -443,6 +443,23 @@ body {
     max-width: 100%;
   }
 
+  .feedback-section {
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+
+  .feedback-section h2 {
+    font-size: 22px;
+  }
+
+  .feedback-section p {
+    font-size: 16px;
+  }
+
+  .feedback-section a {
+    font-size: 16px;
+  }
+
   .site-footer {
     flex-direction: column;
     gap: 30px;
