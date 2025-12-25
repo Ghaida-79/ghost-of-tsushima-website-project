@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles/home-page.css">
+  <link rel="stylesheet" href="styles/feedback.css">
+
+  <title>Help Us Improve the Website</title>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">
+      <a href="home-page.html">
+        <img src="images/game-logo.webp" alt="logo">
+      </a>
+      
+    </div>
+
+    <div class="nav-items">
+
+      <a href="home-page.html">
+        <div class="nav-item">Home</div>
+      </a>
+
+      <a href="#characters">
+        <div class="nav-item">Characters</div>
+      </a>
+      
+      <div class="nav-item">Support</div>
+      <div class="nav-item">Privacy Policy</div>
+      <div class="nav-item">Terms of Survice</div>
+    </div>
+  </nav>
+
+  <h2>Help Us Improve the Website</h2>
+  <div class="container">
+    <form id="feedbackForm" action="php/feedback.php" method="post" onsubmit="sendFeedback(); return false;">
+      <div>
+        <label>Name (optional)</label>
+        <input type="text" name="name">
+      </div>
+      
+      <div>
+        <label>Email (required)</label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div>
+        <label>Your Feedback</label>
+        <textarea name="message" required></textarea>
+      </div>
+
+      <div class="submit-container">
+        <input type="submit" value="Submit" class="submit">
+      </div>
+    </form>
+
+    <p id="responseMessage" style="display: none;" class="responseMessage">
+      Your feedback has been sent successfully. Thank you!
+    </p>
+  </div>
+
+  <script>
+    function sendFeedback () {
+      const form = document.getElementById('feedbackForm');
+
+      fetch(form.action, {
+        method: 'post',
+        body: new FormData(form)
+      });
+
+      form.style.display = "none";
+
+      document.getElementById('responseMessage').style.display = "flex";
+    }
+  </script>
+</body>
+</html>
