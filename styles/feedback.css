@@ -91,7 +91,7 @@ textarea {
   opacity: 0.85;
 }
 
-.responseMessage {
+.response-message {
   width: 100%;
   max-width: 450px;
   min-height: 300px;
@@ -100,6 +100,7 @@ textarea {
   margin-top: 30px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -108,6 +109,11 @@ textarea {
   font-family: var(--description-font);
   font-size: 18px;
   padding: 20px 30px;
+}
+
+.response-note {
+  color: var(--gray);
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {

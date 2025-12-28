@@ -25,6 +25,7 @@ function sendWelcomeEmail($toEmail) {
 
         // Email content
         $mail->isHTML(true);
+        $mail->CharSet = 'UTF-8';
         $mail->Subject = 'Thank you for your feedback!';
 
         $mail->Body = '
@@ -94,6 +95,7 @@ function sendWelcomeEmail($toEmail) {
 
         </div>
         ';
+        $mail->AltBody = "Thank you for your feedback. We appreciate you taking the time to share your thoughts with us. This is a one-time confirmation email.";
 
         $mail->send();
 
