@@ -41,7 +41,7 @@ function sendWelcomeEmail($toEmail) {
 
             <!-- Image -->
             <div style="text-align:center;">
-              <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf"
+              <img src="https://assetsio.gnwcdn.com/tsushima_0CrS6xD.jpg?width=570&quality=85&format=jpg&auto=webp"
                   alt="Ghost of Tsushima"
                   style="width:100%; display:block;">
             </div>
