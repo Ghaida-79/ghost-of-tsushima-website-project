@@ -56,24 +56,26 @@
       <source src="video/hero-video.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
-    <img src="images/game-name.png" class="hero-title" alt="Game title">
+    <div class="hero-title-wrapper reveal hero-title-reveal">
+      <img src="images/game-name.png" class="hero-title" alt="Game title"> 
+    </div>
   </section>
 
   <div class="quote-section">
     <div class="character-quote">
-      <p class="quote-text">
+      <p class="quote-text reveal">
         "Honor died on the beach"
       </p>
-      <span class="quote-author">- Jin Sakai</span>
+      <span class="quote-author reveal">- Jin Sakai</span>
     </div>
   </div>
   
 
   <section id="story" class="story-section">
-    <h1 class="story-title">THE RISE OF THE GHOST</h1>
-    <h2 class="story-mini-title">Story</h2>
+    <h1 class="story-title reveal">THE RISE OF THE GHOST</h1>
+    <h2 class="story-mini-title reveal">Story</h2>
 
-    <article class="story-article">
+    <article class="story-article reveal">
 
       <p>
         In the late 13th century, the Mongol Empire invades the island of Tsushima.
@@ -92,14 +94,14 @@
   </section>
 
   <section class="screens-section">
-    <h3 class="section-title">Screens</h3>
+    <h3 class="section-title reveal">Screens</h3>
 
     <div class="screens-grid">
-      <img src="images/screenshot1.webp" class="shot big">
-      <img src="images/screenshot2.webp" class="shot">
-      <img src="images/screenshot3.webp" class="shot">
-      <img src="images/screenshot6.webp" class="shot">
-      <img src="images/screenshot4.webp" class="shot">
+      <img src="images/screenshot1.webp" class="shot big reveal">
+      <img src="images/screenshot2.webp" class="shot reveal">
+      <img src="images/screenshot3.webp" class="shot reveal">
+      <img src="images/screenshot6.webp" class="shot reveal">
+      <img src="images/screenshot4.webp" class="shot reveal">
     </div>
 
     <div class="box" id="box">
@@ -111,7 +113,7 @@
   </section>
 
   <section class="feature-section">
-    <div class="feature-section-item">
+    <div class="feature-section-item reveal">
       <h2 id="characters">Characters</h2>
       <a href="characters-page.html" class="image-link">
        <img src="images/characters-section-image.png" alt="Ghost of Tsushima characters"> 
@@ -122,7 +124,7 @@
     </p>
     </div>
     
-    <div class="feature-section-item">
+    <div class="feature-section-item reveal">
       <h2 id="world">World & Wallpapers</h2>
       <a href="wallpapers-page.html" class="image-link">
         <img src="images/wallpapers-section-image.png" alt="World of Tsushima"> 
@@ -134,10 +136,10 @@
     </div>
   </section>
 
-  <section class="feedback-section">
+  <section class="feedback-section reveal">
     <h2>Help Us Improve</h2>
     <p>We'd love to hear your thoughts.</p>
-    <a href="feedback.html" class="feedback-button">Give Feedback</a>
+    <a href="feedback.html" class="feedback-button reveal">Give Feedback</a>
   </section>
 
   <footer class="site-footer">
@@ -164,7 +166,7 @@
     </div>
   </footer>
 
-
+  <script src="scripts/reveal.js"></script>
   <script src="scripts/image-viewer.js"></script>
 </body>
 </html>

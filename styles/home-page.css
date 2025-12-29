@@ -36,6 +36,17 @@ body {
   --white: white;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 .logo {
   left: 0;
   margin-top: 10px;
@@ -95,14 +106,16 @@ body {
   display: block;
 }
 
-
-.hero-title {
+.hero-title-wrapper {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%; 
+}
+
+.hero-title {
   transform: translate(-50%, -50%);
-  width: 50%;
-  opacity: 0.7;
+  width: 100%;
+  opacity: 0.9;
 }
 
 .quote-section {
@@ -376,7 +389,11 @@ body {
   }
 
   .hero-video {
-    height: 70vh;
+    height: 100vh;
+  }
+
+  .quote-section {
+    margin-top: -100px;
   }
 
   .hero-title {
