@@ -15,7 +15,7 @@ function sendWelcomeEmail($toEmail) {
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'mo0on7gogo@gmail.com';
-        $mail->Password   = 'efbm mfaz gcyz fwee';
+        $mail->Password   = 'fqqq awpo lsie ezwp';
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
