@@ -14,13 +14,13 @@ function sendWelcomeEmail($toEmail) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'mo0on7gogo@gmail.com';
-        $mail->Password   = 'fqqq awpo lsie ezwp';
+        $mail->Username   = 'email';
+        $mail->Password   = 'password';
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
         // Sender & recipient
-        $mail->setFrom('mo0on7gogo@gmail.com', 'Ghost of Tsushima Website');
+        $mail->setFrom('email', 'Ghost of Tsushima Website');
         $mail->addAddress($toEmail);
 
         // Email content
