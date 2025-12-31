@@ -1,6 +1,5 @@
 const reveals = document.querySelectorAll('.reveal');
 
-// scroll reveal
 window.addEventListener('scroll', () => {
   reveals.forEach((element, index) => {
     if (element.getBoundingClientRect().top < window.innerHeight - 80) {
