@@ -48,36 +48,39 @@
     </div>
   </nav>
 
-  <h2>Help Us Improve the Website</h2>
-  <div class="container">
-    <form id="feedbackForm" action="php/feedback.php" method="post" onsubmit="sendFeedback(); return false;">
-      <div>
-        <label>Name (optional)</label>
-        <input type="text" name="name">
-      </div>
-      
-      <div>
-        <label>Email (required)</label>
-        <input type="email" name="email" required>
-      </div>
+  <main>
+    <h2>Help Us Improve the Website</h2>
+    <div class="container">
+      <form id="feedbackForm" action="php/feedback.php" method="post" onsubmit="sendFeedback(); return false;">
+        <div>
+          <label>Name (optional)</label>
+          <input type="text" name="name">
+        </div>
+        
+        <div>
+          <label>Email (required)</label>
+          <input type="email" name="email" required>
+        </div>
 
-      <div>
-        <label>Your Feedback</label>
-        <textarea name="message" required></textarea>
-      </div>
+        <div>
+          <label>Your Feedback</label>
+          <textarea name="message" required></textarea>
+        </div>
 
-      <div class="submit-container">
-        <input type="submit" value="Submit" class="submit">
-      </div>
-    </form>
+        <div class="submit-container">
+          <input type="submit" value="Submit" class="submit">
+        </div>
+      </form>
 
-    <p id="responseMessage" style="display: none;" class="response-message">
-      Your feedback has been sent successfully. Thank you!<br><br>
-      <span class="response-note">
+      <p id="responseMessage" style="display: none;" class="response-message">
+        Your feedback has been sent successfully. Thank you!<br><br>
+        <span class="response-note">
         If this is your first time using this email with us, you will receive a confirmation message.
-      </span>
-    </p>
-  </div>
+        </span>
+      </p>
+    </div>  
+  </main>
+
 
   <script>
     function sendFeedback () {
