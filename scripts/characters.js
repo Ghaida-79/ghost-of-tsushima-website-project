@@ -43,10 +43,6 @@ const characters = [{
   name: 'Samurai Guardian',
   description: "A devoted samurai tasked with protecting sacred lands and villages. He represents honor, duty, and the traditional code of the samurai."
 }, {
-  image: 'characters/guardian.webp',
-  name: 'Samurai Guardian',
-  description: "A devoted samurai tasked with protecting sacred lands and villages. He represents honor, duty, and the traditional code of the samurai."
-}, {
   image: 'characters/raider.webp',
   name: 'Mongol Raider',
   description: "A brutal invader who terrorizes villages across Tsushima. Raiders represent the chaos and cruelty of the Mongol invasion."
