@@ -22,6 +22,18 @@ const wallpapers = [{
 }, {
   preview: 'wallpapers/previews/wallpaper8.jpg',
   full: 'wallpapers/full/wallpaper8.jpg'
+}, {
+  preview: 'wallpapers/previews/wallpaper9.jpg',
+  full: 'wallpapers/full/wallpaper9.jpg'
+}, {
+  preview: 'wallpapers/previews/wallpaper10.jpg',
+  full: 'wallpapers/full/wallpaper10.jpg'
+}, {
+  preview: 'wallpapers/previews/wallpaper11.jpg',
+  full: 'wallpapers/full/wallpaper11.jpg'
+}, {
+  preview: 'wallpapers/previews/wallpaper12.jpg',
+  full: 'wallpapers/full/wallpaper12.jpg'
 }
 ];
 
